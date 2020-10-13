@@ -1,5 +1,5 @@
 /*
-Author:
+Author: Sarah Heejeong Yang 
 
 This program impelements a function called 'transform' which accepts three
 arguments
@@ -15,7 +15,12 @@ element.
 #include <math.h> /* exp */
 
 
-void transform(/* Put parameters here */) {}
+void transform(double (*f) (double), double *x, int n {
+    int i;
+    for (i = 0, i < n, i++) {
+    x[i] = (*f)(x[i]);
+    }
+}
 
 double addOne(double x) {
     return x + 1;
